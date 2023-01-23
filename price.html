@@ -7,7 +7,7 @@
     <meta name="keywords" content="">
     <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="css/style.min.css">
-    <title>Калькулятор</title>
+    <title>Цены</title>
 </head>
 
 <body>
@@ -2176,174 +2176,337 @@
         </header>
         <main class="content">
 
-            <section class="calc-result">
+            <section class="price">
                 <div class="container">
                     <div class="breadcrumbs">
                         <a href="index.html" class="breadcrumbs__item">Главная</a>
                         <span class="breadcrumbs__item">
-                            Анкета первичного пациента
+                            Цены
                         </span>
                     </div>
-                    <div class="calc-result__nav">
-                        <button class="calc-result__back swiper-button">
-                            <img src="img/prev.svg" alt="">
-                        </button>
-                        <div class="calc-result__tabs tabs">
-                            <div class="tabs__wrap">
-                                <a href="" class="tab">
-                                    <span>Вариант 1</span>
-                                </a>
-                                <a href="" class="tab _active">
-                                    <span>Вариант 2</span>
-                                </a>
-                            </div>
+                    <div class="price__inner">
+                        <div class="tv-header__nav">
+                            <a href="" class="tv-header__back swiper-button">
+                                <img src="img/prev.svg" alt="">
+                            </a>
                         </div>
-                    </div>
-                    <div class="calc-result__grid">
-                        <div class="result-card">
-                            <div class="result-card__info">
-                                <div class="result-card__title display2">
-                                    Брекеты
-                                </div>
-                                <div class="result-card__desc display4">
-                                    Вам рекомендованы комбинированные брекеты Damon Clear на оба зубных ряда
-                                </div>
-                            </div>
-                            <div class="result-card__img">
-                                <img src="img/result.png" alt="">
-                            </div>
-                            <div class="result-card__info">
-                                <div class="result-card__title display2">
-                                    Лечение
-                                </div>
-                                <div class="result-card__desc display4">
-                                    Исходя их ваших ответов вам подходит лечение Plus
-                                </div>
-                            </div>
-                            <div class="result-card__spoiler">
-                                <div class="spoiler-card">
-                                    <div class="spoiler-card__show">
-                                    <span class="text14">
-                                        Клинические показания для лечения по тарифу Plus
-                                    </span>
-                                        <img src="img/brand-icon.svg" alt="">
-                                    </div>
-                                    <div class="spoiler-card__hidden">
-                                        <div class="result-card__text content-text text16  gray-text">
-                                            <ul>
-                                                <li>Ретенированные зубы</li>
-                                                <li>Ретенированные зубы</li>
-                                                <li>Ретенированные зубы</li>
-                                            </ul>
-                                            <p class="text12">Данные этого теста примерные и не являются окончательным диагнозом. Точные клинические показания к лечению врач выявит только после проведения диагностики. Стоимость лечения по результатам тестирования — приблизительная.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="result-card__price">
-                                <div class="display3">
-                                    Стоимость лечения
-                                </div>
-                                <div class="display1">
-                                    от 12 000 р./мес.
-                                </div>
-                            </div>
-                            <div class="result-card__price result-card__price2">
-                                <div class="display5">
-                                    Полная стоимость лечения составит
-                                </div>
-                                <div class="text18">
-                                    350 000 р.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="result-card">
-                            <div class="result-card__info">
-                                <div class="result-card__title display2 mob-display4">
-                                    Как спланировать бюджет на ортодонтическое лечение?
-                                </div>
-                            </div>
-                            <div class="result-steps">
-                                <div class="result-step">
-    <div class="text16">
-        Предоплата
-    </div>
-    <div class="text14 gray-text">
-        На обсуждении плана лечения
-    </div>
-    <div class="text16">
-        66 000 р.
-    </div>
-</div>
-
-                                <div class="result-step">
-    <div class="text16">
-        В день фиксации
-    </div>
-    <div class="text14 gray-text">
-        Через 2 недели
-    </div>
-    <div class="text16">
-        66 000 р.
-    </div>
-</div>
-
-                                <div class="result-step">
-    <div class="text16">
-        1 активация
-    </div>
-    <div class="text14 gray-text">
-        Через 2 месяца
-    </div>
-    <div class="text16">
-        29 500 р.
-    </div>
-</div>
-
-                                <div class="result-step">
-    <div class="text16">
-        2 активация
-    </div>
-    <div class="text14 gray-text">
-        Через 2 месяца
-    </div>
-    <div class="text16">
-        29 500 р.
-    </div>
-</div>
-
-                            </div>
-                        </div>
-                        <div class="calc-price__nav2">
-                            <button class="calc-price__btn m-btn m-btn-middle m-btn-dark">
-                                <img src="img/calc.svg" alt="">
-                                <span>Хочу детальный расчет</span>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="how-start how-start2">
-                <div class="container">
-                    <div class="how-start__inner">
-                        <div class="how-start__content">
-                            <div class="how-start__info">
-                                <h2 class="display2">
-                                    С чего начать?
-                                </h2>
+                        <div class="price__info">
+                            <h1 class="price__title display2">
+                                Цены на брекеты
+                            </h1>
+                            <div class="price__desc">
                                 <p class="text16">
-                                    Диагностика со <span class="accent-text">скидкой 15%</span> при оплате онлайн
+                                    Какой то кроткий текст описания
                                 </p>
                             </div>
                         </div>
-                        <button class="how-start__btn m-btn m-btn-big m-btn-middle-mob m-btn-dark">
-                            <img src="img/calendar3.svg" alt="">
-                            <span>Записаться</span>
-                        </button>
                     </div>
                 </div>
             </section>
+
+            <section class="prices-service price-info">
+                <div class="container">
+                    <div class="prices-service__inner">
+                        <div class="prices-service__left">
+                            <div class="price-info__groups">
+                                <div class="price-info__group">
+                                    <div class="price-info__top">
+                                        <div class="price-info__subtitle display3">
+                                            Консультации и диагностика
+                                        </div>
+                                    </div>
+                                    <div class="price-info__items">
+                                        <div class="prices-service__prices-item">
+    <span class="display5">
+        Диагностическая консультация
+    </span>
+    <span class="text18 nowrap">
+        5 000 р.
+    </span>
+</div>
+
+                                        <div class="prices-service__prices-item">
+    <span class="display5">
+        Диагностика
+    </span>
+    <span class="text18 nowrap">
+        5 000 р.
+    </span>
+</div>
+
+                                    </div>
+                                </div>
+                                <div class="price-info__group">
+                                    <div class="price-info__top">
+                                        <div class="price-info__subtitle display3">
+                                            Брекеты
+                                        </div>
+                                        <p class="text16">За 1 зубной ряд</p>
+                                    </div>
+                                    <div class="price-info__items">
+                                        <div class="prices-service__prices-item">
+    <span class="display5">
+        Диагностическая консультация
+    </span>
+    <span class="text18 nowrap">
+        5 000 р.
+    </span>
+</div>
+
+                                        <div class="prices-service__prices-item">
+    <span class="display5">
+        Диагностика
+    </span>
+    <span class="text18 nowrap">
+        5 000 р.
+    </span>
+</div>
+
+                                        <div class="prices-service__prices-item">
+    <span class="display5">
+        Диагностическая консультация
+    </span>
+    <span class="text18 nowrap">
+        5 000 р.
+    </span>
+</div>
+
+                                        <div class="prices-service__prices-item">
+    <span class="display5">
+        Диагностика
+    </span>
+    <span class="text18 nowrap">
+        5 000 р.
+    </span>
+</div>
+
+                                    </div>
+                                </div>
+                                <div class="price-info__group">
+                                    <div class="price-info__top">
+                                        <div class="price-info__subtitle display3">
+                                            Лечение
+                                        </div>
+                                    </div>
+                                    <div class="price-info__items">
+                                        <div class="prices-service__prices-item">
+    <div class="m-tooltip__wrap tariff-card2__sum-desc">
+    <div class="m-tooltip">
+        <img src="img/question3.svg" alt="">
+    </div>
+    <span class="display5">
+        Ортодонтический набор
+    </span>
+    <div class="m-tooltip__text">
+        <div class="m-tooltip__text-inner">
+            <p class="text14">
+                Пример текста внутри тултипа может быть длинным или всего в несколько строк
+            </p>
+        </div>
+    </div>
+</div>
+
+    <span class="text18 nowrap">
+        30 000 р.
+    </span>
+</div>
+
+                                        <div class="prices-service__prices-item">
+    <div class="m-tooltip__wrap tariff-card2__sum-desc">
+    <div class="m-tooltip">
+        <img src="img/question3.svg" alt="">
+    </div>
+    <span class="display5">
+        Лечение Лайт
+    </span>
+    <div class="m-tooltip__text">
+        <div class="m-tooltip__text-inner">
+            <p class="text14">
+                Пример текста внутри тултипа может быть длинным или всего в несколько строк
+            </p>
+        </div>
+    </div>
+</div>
+
+    <span class="text18 nowrap">
+        118 000 р.
+    </span>
+</div>
+
+                                    </div>
+                                </div>
+                                <div class="price-info__group">
+                                    <div class="price-info__top">
+                                        <div class="price-info__subtitle display3">
+                                            Дополнительно в процессе лечения
+                                        </div>
+                                    </div>
+                                    <div class="price-info__items">
+                                        <div class="prices-service__prices-item">
+    <span class="display5">
+        Диагностическая консультация
+    </span>
+    <span class="text18 nowrap">
+        5 000 р.
+    </span>
+</div>
+
+                                        <div class="prices-service__prices-item">
+    <span class="display5">
+        Диагностика
+    </span>
+    <span class="text18 nowrap">
+        5 000 р.
+    </span>
+</div>
+
+                                        <div class="prices-service__prices-item">
+    <span class="display5">
+        Диагностика
+    </span>
+    <span class="text18 nowrap">
+        5 000 р.
+    </span>
+</div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="prices-service__right">
+                            <div class="doctor-consult price-consult">
+                                <div class="doctor-consult__title display4">
+    Калькулятор
+</div>
+<div class="doctor-consult__desc">
+    <p class="text14">
+        Делаем качественное ортодонтическое лечение доступным для всех
+    </p>
+</div>
+<div class="doctor-consult__nav">
+    <a href="" class="doctor-consult__btn m-btn m-btn-small m-btn-light">
+        Задать вопрос врачу
+    </a>
+</div>
+<img src="img/doctor-bg3.svg" alt="" class="doctor-consult__img">
+
+                            </div>
+
+                            <div class="how-cheaper slider-wrap">
+                                <div class="container">
+    <div class="how-cheaper__info">
+        <h2 class="how-cheaper__title display2">
+            Ваши финансовые возможности
+        </h2>
+        
+        <p class="how-cheaper__desc text16">
+            Короткое описание
+        </p>
+    </div>
+    <div class="how-cheaper__slider">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="cheap-card">
+    <div class="cheap-card__content">
+        <div class="cheap-card__info">
+            <div class="cheap-card__title display4">
+                Рассрочка платежа
+            </div>
+            
+        </div>
+        <div class="cheap-card__nav">
+            <a href="" class="cheap-card__btn m-btn m-btn-small m-btn-dark">
+                Узнать подробнее
+            </a>
+        </div>
+    </div>
+    <div class="cheap-card__img">
+        <img src="img/cheap.png" alt="">
+    </div>
+</div>
+
+                </div>
+                <div class="swiper-slide">
+                    <div class="cheap-card">
+    <div class="cheap-card__content">
+        <div class="cheap-card__info">
+            <div class="cheap-card__title display4">
+                Налоговый вычет за лечение
+            </div>
+            
+        </div>
+        <div class="cheap-card__nav">
+            <a href="" class="cheap-card__btn m-btn m-btn-small m-btn-dark">
+                Узнать подробнее
+            </a>
+        </div>
+    </div>
+    <div class="cheap-card__img">
+        <img src="img/cheap2.png" alt="">
+    </div>
+</div>
+
+                </div>
+                <div class="swiper-slide">
+                    <div class="cheap-card">
+    <div class="cheap-card__content">
+        <div class="cheap-card__info">
+            <div class="cheap-card__title display4">
+                Кэшбэк 2%
+            </div>
+            
+            <p class="cheap-card__desc text14">
+                При оплате наличными средствами
+            </p>
+            
+        </div>
+        <div class="cheap-card__nav">
+            <a href="" class="cheap-card__btn m-btn m-btn-small m-btn-dark">
+                Узнать подробнее
+            </a>
+        </div>
+    </div>
+    <div class="cheap-card__img">
+        <img src="img/cheap3.png" alt="">
+    </div>
+</div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+                            </div>
+
+                            <div class="doc-link">
+                                <h2 class="display2">
+    Ссылки на документы
+</h2>
+<div class="feedback__info">
+    <div class="text16">
+        Статьи о нашей клинике в различных изданиях
+    </div>
+    <div class="feedback__links">
+        <a href="" class="feedback__link text16">
+            Прайс клиника на Чайковского
+        </a>
+        <a href="" class="feedback__link text16">
+            Прайс клиника на Лизе
+        </a>
+        <a href="" class="feedback__link text16">
+            Памятка рассрочки на ортодонтию
+        </a>
+    </div>
+</div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
 
         </main>
         <footer class="footer">
