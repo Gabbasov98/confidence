@@ -113,10 +113,46 @@
         <a href="price3.html" style="display: block; margin-bottom: 20px;">
             Цены/Разделов 3
         </a>
-        <a href="price3.html" style="display: block; margin-bottom: 20px;">
+        <a href="installment.html" style="display: block; margin-bottom: 20px;">
             Рассрочка
         </a>
 
+
+        <a href="service.html" style="display: block; margin-bottom: 20px;">
+            Продукт/услуга
+        </a>
+        <a href="service2.html" style="display: block; margin-bottom: 20px;">
+            Продукт/услуга/Академический прием
+        </a>
+
+
+
+        <a href="about.html" style="display: block; margin-bottom: 20px;">
+            О клинике
+        </a>
+        <a href="about-history.html" style="display: block; margin-bottom: 20px;">
+            История
+        </a>
+        <a href="licensies.html" style="display: block; margin-bottom: 20px;">
+            Лицензии
+        </a>
+        <a href="contacts.html" style="display: block; margin-bottom: 20px;">
+            Контакты
+        </a>
+        <a href="contacts2.html" style="display: block; margin-bottom: 20px;">
+            Контакты 2
+        </a>
+
+
+        <a href="tutor.html" style="display: block; margin-bottom: 20px;">
+            Наши кураторы
+        </a>
+        <a href="vacancies.html" style="display: block; margin-bottom: 20px;">
+            Вакансии
+        </a>
+        <a href="vacancy.html" style="display: block; margin-bottom: 20px;">
+            Вакансия
+        </a>
 
 
         <a href="course.html" style="display: block; margin-bottom: 20px;">
@@ -322,6 +358,12 @@
         <button style="border: 2px solid #000;margin-bottom: 20px;"  data-modal="tvModal">
             Продожить заполнять анкету?
         </button>
+        <button style="border: 2px solid #000;margin-bottom: 20px;"  data-modal="imgModal">
+            Фото лица в анфас
+        </button>
+        <button style="border: 2px solid #000;margin-bottom: 20px;"  data-modal="imgModal2">
+            Фото лица в анфас 2
+        </button>
 
     </div>
 
@@ -390,6 +432,110 @@
                 </button>
             </div>
         </form>
+    </div>
+</div>
+
+<div class="modal img-modal" id="imgModal">
+    <div class="modal__dialog">
+
+        <button class="modal__close _close-modal">
+            <img src="img/close2.svg" alt="">
+        </button>
+
+        <div class="img-modal__info">
+            <div class="display3">
+                Фото лица в анфас
+            </div>
+            <div class="text16">
+                Улыбайтесь как обычно, держите голову ровно, сделайте селфи лица строго прямо
+            </div>
+        </div>
+
+        <div class="img-modal__slider">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="img-modal__picture">
+                            <img src="img/upload.webp" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="img-modal__picture">
+                            <img src="img/upload.webp" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+
+        <div class="img-modal__nav">
+            <button class="_next-slide img-modal__btn m-btn m-btn-middle m-btn-light">
+                <img src="img/prev.svg" alt="">
+                <span>Предыдущее фото</span>
+            </button>
+            <button class="_upload-btn img-modal__btn m-btn m-btn-middle m-btn-big-mob m-btn-dark">
+                <span>Загрузить фото</span>
+                <input type="file">
+            </button>
+        </div>
+    </div>
+</div>
+
+<div class="modal img-modal" id="imgModal2">
+    <div class="modal__dialog">
+
+        <button class="modal__close _close-modal">
+            <img src="img/close2.svg" alt="">
+        </button>
+
+        <div class="img-modal__info">
+            <div class="display3">
+                Фото лица в анфас
+            </div>
+            <div class="text16">
+                Улыбайтесь как обычно, держите голову ровно, сделайте селфи лица строго прямо
+            </div>
+        </div>
+
+        <div class="img-modal__slider">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="img-modal__picture">
+                            <img src="img/upload.webp" alt="">
+                        </div>
+                        <button class="_upload-btn img-modal__change m-btn m-btn-middle m-btn-light">
+                            <img src="img/reload.svg" alt="">
+                            <span>Изменить фото</span>
+                            <input type="file">
+                        </button>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="img-modal__picture">
+                            <img src="img/upload.webp" alt="">
+                        </div>
+                        <button class="_upload-btn img-modal__change m-btn m-btn-middle m-btn-light">
+                            <img src="img/reload.svg" alt="">
+                            <span>Изменить фото</span>
+                            <input type="file">
+                        </button>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+
+        <div class="img-modal__nav">
+            <button class="_next-slide img-modal__btn m-btn m-btn-middle m-btn-light">
+                <img src="img/prev.svg" alt="">
+                <span>Предыдущее фото</span>
+            </button>
+            <button class="_upload-btn img-modal__btn m-btn m-btn-middle m-btn-big-mob m-btn-dark">
+                <span>Следующее фото</span>
+                <img src="img/next2.svg" alt="">
+            </button>
+        </div>
     </div>
 </div>
 
