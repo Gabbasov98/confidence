@@ -2204,7 +2204,7 @@
     </div>
 </div>
 
-        <div class="step">
+        <div class="step tabs-parent">
             <div class="step__info">
                 <div class="step__num text18 accent-text">
                     Шаг 7
@@ -2214,7 +2214,7 @@
                 </div>
             </div>
             <div class="upload__buttons">
-                <button class="upload__btn m-btn-outline2">
+                <button data-tab="file" class="_tab upload__btn m-btn-outline2">
                     <span class="upload__btn-round ">
                         <svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M18.1719 10.7858H0.857003C0.531717 10.7858 0.0712891 10.4338 0.0712891 10.0001C0.0712891 9.56635 0.531717 9.21436 0.857003 9.21436H18.1719C18.4972 9.21436 18.9284 9.56635 18.9284 10.0001C18.9284 10.4338 18.4972 10.7858 18.1719 10.7858Z" fill="#80787A"/>
@@ -2225,7 +2225,7 @@
                         Прикрепить файл
                     </span>
                 </button>
-                <button class="upload__btn m-btn-outline2">
+                <button data-tab="link" class="_tab upload__btn m-btn-outline2">
                     <span class="upload__btn-round ">
                         <svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M7.8887 14.9444L5.66668 17.1664C4.74547 18.0876 3.25365 18.0876 2.33322 17.1666C1.4126 16.246 1.4126 14.754 2.33303 13.8336L6.77785 9.38873C7.69829 8.46827 9.19025 8.46827 10.1107 9.38873C10.4175 9.69557 10.915 9.69557 11.2219 9.38873C11.5287 9.0819 11.5287 8.58439 11.2219 8.27756C9.68772 6.74342 7.20082 6.74342 5.66668 8.27756L1.22189 12.7223C-0.312246 14.2565 -0.312246 16.7434 1.22189 18.2775C2.75585 19.8125 5.24294 19.8125 6.77789 18.2775L8.99991 16.0555C9.30675 15.7487 9.30675 15.2512 8.99991 14.9443C8.69308 14.6375 8.19553 14.6375 7.8887 14.9444Z" fill="#80787A"/>
@@ -2237,6 +2237,26 @@
                     </span>
                 </button>
             </div>
+            <div class="_tab-content _tab-file">
+                <div class="upload__input">
+                    <div class="upload__input-title text16">название файла.pdf</div>
+                    <button class="upload__input-btn text-btn text-btn2">
+                        <img src="img/reload.svg" alt="">
+                        <span class="text14">Заменить</span>
+                        <input type="file">
+                    </button>
+                </div>
+            </div>
+            <div class="_tab-content _tab-link">
+                <fieldset class="fg ">
+    <input type="text">
+    <label>
+        Ссылка на файл
+    </label>
+</fieldset>
+
+            </div>
+
         </div>
         <div class="questionnaire__bottom">
     <button class=" questionnaire__prev m-btn m-btn-middle m-btn-light">
