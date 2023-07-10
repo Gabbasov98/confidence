@@ -1,0 +1,927 @@
+.installment {
+  margin-bottom: 1.5em;
+  background-color: #f8f7f7;
+}
+.installment__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1em 0 6.25em;
+}
+.installment__left {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+.installment__right {
+  width: 31.25em;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  margin-left: 3em;
+}
+@media screen and (min-width: 577px) {
+  .installment__title {
+    font-size: 2em;
+    padding-right: .5em;
+    padding-top: .28em;
+  }
+  .installment__title span {
+    display: block;
+  }
+  .installment__title span:before {
+    width: .84em;
+    height: .84em;
+    top: -.28em;
+  }
+}
+.installment__info {
+  display: grid;
+  grid-template-columns: 100%;
+  gap: 1.25em;
+}
+.installment__list {
+  gap: .5em;
+  margin-top: 1.55em;
+}
+.installment__items {
+  display: grid;
+  grid-template-columns: repeat(2, calc(50% - 1.5em));
+  gap: 3em;
+  margin-top: 3em;
+}
+.installment__img {
+  width: 100%;
+  display: block;
+}
+.installment__tariffs {
+  display: grid;
+  grid-template-columns: repeat(3, calc((100% / 3) - (2.5em / 3)));
+  gap: 1.25em;
+}
+
+.installment-info .prices-service__right {
+  padding: 0;
+}
+
+.installment-tariff__inner {
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid #E7E1D9;
+  border-radius: .75em;
+  padding: 2.5em;
+}
+.installment-tariff__full {
+  margin-top: 1.25em;
+  padding: .8125em 1.25em;
+  background-color: #f8f7f7;
+  border-radius: .75em;
+  display: grid;
+  grid-template-columns: 100%;
+  gap: .625em;
+}
+
+.req,
+.tax-info {
+  padding: 2.5em;
+  background-color: #f8f7f7;
+  margin-top: 3em;
+  border-radius: .75em;
+}
+
+.req__info, .req__fields {
+  display: grid;
+  grid-template-columns: 100%;
+  gap: .625em;
+}
+.req__fields {
+  margin-top: 1.25em;
+  gap: 1.25em;
+}
+.req__nav {
+  margin: 1.25em 0 .625em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.tax-info__text {
+  margin-top: 1.25em;
+}
+.tax-info__text ol {
+  padding-left: 0;
+}
+.tax-info__nav {
+  margin: 1.25em 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.tax-info__nav .m-btn-light {
+  background-color: #FFFFFF;
+}
+.tax-info__btn:not(:last-child) {
+  margin-right: 1.42em;
+}
+
+@media screen and (max-width: 576px) {
+  .installment {
+    margin-bottom: 1.875em;
+  }
+  .installment__inner {
+    display: block;
+    padding-bottom: 3.75em;
+  }
+  .installment__right {
+    display: none;
+  }
+  .installment__title {
+    padding: 0;
+  }
+  .installment__title span:before {
+    display: none;
+  }
+  .installment__info {
+    gap: .625em;
+  }
+  .installment__list {
+    margin-top: .875em;
+  }
+  .installment__items {
+    grid-template-columns: repeat(2, calc(50% - .375em));
+    gap: .75em;
+    margin-top: 1.5em;
+  }
+  .installment .tv-nums__item {
+    width: 100%;
+    margin: 0 !important;
+  }
+  .installment .tv-nums__title {
+    font-size: 1.125em;
+  }
+  .installment__tariffs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: unset;
+    width: calc(100% + 3em);
+    margin-left: -1.5em;
+    padding: 0 1.5em;
+    overflow-x: auto;
+  }
+  .installment__tariffs::-webkit-scrollbar {
+    width: 0;
+    height: 9px;
+  }
+
+  .installment-tariff {
+    width: 17.5em;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+  }
+  .installment-tariff:not(:last-child) {
+    margin-right: 1.25em;
+  }
+  .installment-tariff__inner {
+    padding: .875em;
+  }
+  .installment-tariff__full {
+    margin-top: .875em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: unset;
+  }
+  .installment-tariff__full .text18 {
+    white-space: nowrap;
+    margin-left: 1em;
+  }
+
+  .installment-info .prices-service__right {
+    -webkit-box-ordinal-group: unset;
+        -ms-flex-order: unset;
+            order: unset;
+  }
+
+  .req {
+    padding: 1.5em;
+  }
+
+  .tax-info {
+    padding: 1.5em;
+  }
+  .tax-info__text, .tax-info__nav {
+    margin-top: .625em;
+  }
+}
+.consults {
+  padding-bottom: 3.75em;
+}
+.consults__grid {
+  margin-top: 4.75em;
+  display: grid;
+  grid-template-columns: repeat(3, calc(100% / 3 - 2em));
+  gap: 3em;
+}
+.consults__grid .info__inner {
+  grid-column: 1/-1;
+}
+
+.consult-page {
+  background-color: #f8f7f7;
+}
+.consult-page__inner {
+  display: grid;
+  grid-template-columns: auto 46.33%;
+  gap: 1em;
+}
+.consult-page__left {
+  padding-bottom: 6.25em;
+}
+.consult-page__right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  background-image: url(../img/k.svg);
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  background-size: 100% auto;
+}
+.consult-page__img {
+  width: 100%;
+}
+.consult-page__info {
+  margin-top: 2.5em;
+  display: grid;
+  grid-template-columns: 100%;
+  gap: 1.25em;
+}
+.consult-page__list {
+  line-height: 156%;
+  gap: .89em;
+}
+.consult-page__list li:before {
+  margin-right: .445em;
+}
+.consult-page__available {
+  margin-top: 2.5em;
+}
+.consult-page__price {
+  margin-top: 3.125em;
+}
+.consult-page__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 1.25em;
+}
+.consult-page__btn:not(:last-child) {
+  margin-right: 1em;
+}
+.consult-page__btn img {
+  width: 1.2em;
+  margin-right: .5em;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+.consult-page__btn--order {
+  background-color: #fff;
+}
+
+.consult-desc {
+  padding: 6.25em 0 3.125em;
+}
+.consult-desc .patient-req__text {
+  max-width: 48.5em;
+}
+
+.consult-contain {
+  padding: 3.125em 0;
+}
+
+.docs,
+.consult-collection {
+  background-color: transparent;
+  padding: 3.125em 0;
+}
+.docs__grid,
+.consult-collection__grid {
+  margin-top: 2.5em;
+  display: grid;
+  grid-template-columns: repeat(3, calc(100% / 3 - 2em));
+  gap: 3em;
+}
+
+.docs__grid {
+  margin-top: 3em;
+}
+
+.doc-card {
+  padding: 2.5em;
+  border: 1px solid #E7E1D9;
+  border-radius: .75em;
+}
+.doc-card__items {
+  display: grid;
+  grid-template-columns: 100%;
+  gap: .75em;
+  margin-top: 1em;
+}
+.doc-card__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.doc-card__num {
+  min-width: 1em;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+.doc-card__nav {
+  padding: 1em 0 0 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (max-width: 576px) {
+  .consults {
+    padding: 1em 0 1.875em;
+  }
+  .consults__grid {
+    grid-template-columns: 100%;
+    gap: 1.5em;
+    margin-top: 3.75em;
+  }
+  .consults__grid .info__inner {
+    grid-row: 5/6;
+  }
+
+  .consult-page {
+    padding: 1.5em 0 3.75em;
+  }
+  .consult-page__inner {
+    grid-template-columns: 100%;
+  }
+  .consult-page__left {
+    padding: 0;
+  }
+  .consult-page__right {
+    display: none;
+  }
+  .consult-page__info {
+    margin-top: 1.5em;
+    gap: .75em;
+  }
+  .consult-page__list {
+    gap: .375em;
+  }
+  .consult-page__available {
+    margin-top: 1.5em;
+  }
+  .consult-page__price {
+    margin-top: 2.125em;
+  }
+  .consult-page__nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: .75em;
+  }
+  .consult-page__btn {
+    padding: 0;
+  }
+  .consult-page__btn:not(:last-child) {
+    margin-right: 0;
+  }
+
+  .consult-desc {
+    padding: 3.75em 0 1.875em;
+  }
+
+  .consult-contain {
+    padding: 1.875em 0;
+  }
+
+  .consult-collection,
+  .docs {
+    padding: 1.875em 0;
+  }
+  .consult-collection__grid,
+  .docs__grid {
+    margin-top: .875em;
+    grid-template-columns: 100%;
+    gap: 1.5em;
+  }
+
+  .docs__grid {
+    margin-top: .625em;
+  }
+
+  .doc-card {
+    padding: 1.5em;
+  }
+  .doc-card__items {
+    margin-top: .625em;
+    gap: .375em;
+  }
+  .doc-card__num {
+    min-width: 1.145em;
+  }
+}
+.contacts {
+  background-color: #f8f7f7;
+}
+.contacts__inner {
+  padding: 1em 0 6.25em;
+  display: grid;
+  grid-template-columns: repeat(2, calc(50% - 1.5em));
+  gap: 3.75em 3em;
+}
+.contacts__info {
+  display: grid;
+  grid-template-columns: 100%;
+  gap: 1.25em;
+}
+.contacts__info2, .contacts__info3 {
+  display: grid;
+  grid-template-columns: 100%;
+  gap: 0.625em;
+  margin-top: 3em;
+}
+.contacts__time {
+  display: grid;
+  grid-template-columns: 100%;
+  gap: 0.1875em;
+}
+.contacts .footer__socials {
+  padding: 0;
+}
+.contacts .footer__social {
+  width: 3.375em;
+  height: 3.375em;
+  background: rgba(255, 255, 255, 0.8);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+.contacts .footer__social img {
+  width: 1.5em;
+}
+.contacts__items {
+  display: grid;
+  grid-template-columns: 100%;
+  gap: 3em;
+}
+
+.clinic-card {
+  padding: 2.5em;
+  border-radius: .75em;
+  background-color: #fff;
+  display: grid;
+  grid-template-columns: calc(100% - 15.6875em) 13.1875em;
+  gap: 2.5em;
+  position: relative;
+}
+.clinic-card__info {
+  display: grid;
+  grid-template-columns: 100%;
+  gap: 0.625em;
+  padding-top: .625em;
+}
+.clinic-card__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 1.25em;
+}
+
+.map {
+  border-radius: .5em;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.map iframe {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.map .zoom-control {
+  opacity: 0 !important;
+}
+
+.docs--contacts .tax-info {
+  margin-top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.docs--contacts .tax-info__nav {
+  padding-top: .625em;
+  margin-top: auto;
+}
+
+.contacts2 {
+  padding: 6.25em 0 3.125em;
+}
+.contacts2__inner {
+  display: grid;
+  grid-template-columns: repeat(2, calc(50% - 1.5em));
+  gap: 3.75em 3em;
+}
+@media screen and (min-width: 577px) {
+  .contacts2 .article-stage__form {
+    padding-top: 5em;
+  }
+}
+
+.personal-tutor {
+  padding: 2.5em;
+  border-radius: .75em;
+  background-color: #fff;
+}
+.personal-tutor__grid {
+  display: grid;
+  grid-template-columns: calc(100% - 13.75em) 12.5em;
+  gap: 1.25em;
+}
+.personal-tutor__images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+.personal-tutor__desc {
+  grid-column: 1/-1;
+}
+.personal-tutor .selection-card__images {
+  margin: 0;
+}
+.personal-tutor__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 1.875em;
+}
+
+.feedback2 {
+  padding: 3.125em 0;
+}
+.feedback2 .req {
+  max-width: 52.3125em;
+  margin: 0;
+}
+
+.equip--contacts,
+.how-recover--contacts {
+  background-color: transparent;
+}
+
+.how-recover--contacts {
+  padding-bottom: 3.125em;
+}
+
+.road {
+  padding: 4.75em 0 3.125em;
+}
+.road__tabs {
+  margin-top: .75em;
+}
+.road__grid {
+  display: grid;
+  grid-template-columns: repeat(2, calc(50% - 1.5em));
+  gap: 3em;
+  margin-top: 3em;
+}
+@media screen and (min-width: 577px) {
+  .road__tabs {
+    display: none;
+  }
+  .road ._tab-content {
+    display: block;
+  }
+}
+
+.road-card {
+  padding: 2.5em;
+  border-radius: .75em;
+  border: 1px solid #E7E1D9;
+}
+.road-card__grid {
+  margin-top: 2.5em;
+  display: grid;
+  grid-template-columns: repeat(2, calc(50% - 1.25em));
+  gap: 2.5em;
+}
+.road-card__items {
+  margin-top: 1.25em;
+  display: grid;
+  grid-template-columns: 100%;
+  gap: 0.125em;
+}
+.road-card__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.road-card__item:last-child .road-card__left:before {
+  display: none;
+}
+.road-card__left {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  margin-right: .75em;
+  position: relative;
+  padding-top: .1875em;
+}
+.road-card__left:before {
+  content: '';
+  position: absolute;
+  width: 2px;
+  height: calc(100% - 2.125em);
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  border-left: 2px dashed #e7e1d9;
+}
+.road-card__icon {
+  width: 1.625em;
+  height: 1.625em;
+  border-radius: 50%;
+  background: #f8f7f7;
+  -webkit-backdrop-filter: blur(7px);
+          backdrop-filter: blur(7px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.road-card__icon img {
+  width: .75em;
+  height: auto;
+}
+.road-card__content {
+  padding: .1875em 0 .625em;
+  display: grid;
+  grid-template-columns: 100%;
+  gap: 0.625em;
+}
+.road-card__info {
+  min-height: 1.625em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.clinic {
+  padding-bottom: 4.75em;
+  background-color: #f8f7f7;
+}
+.clinic__inner {
+  margin-top: 3em;
+  display: grid;
+  grid-template-columns: repeat(2, calc(50% - 1.5em));
+  gap: 1.25em 3em;
+}
+.clinic__info {
+  display: grid;
+  grid-template-columns: 100%;
+  gap: 0.625em;
+}
+.clinic__desc {
+  margin: .625em 0 2.375em;
+}
+.clinic__list {
+  gap: .5em;
+}
+.clinic__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 3em;
+}
+.clinic__btn {
+  height: 3.4em;
+}
+.clinic__btn img {
+  width: 1.2em;
+  display: block;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  margin-right: .5em;
+}
+.clinic__map {
+  height: 15.9375em;
+  margin-top: 1.875em;
+}
+.clinic__way {
+  margin-top: 2.5em;
+  display: grid;
+  grid-template-columns: 100%;
+  gap: 1.25em;
+}
+.clinic__way-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.clinic__way-btn:not(:last-child) {
+  margin-right: 1.5em;
+}
+.clinic__way-btn img {
+  width: 1.29em;
+  margin-right: .67em;
+}
+
+.parking {
+  display: grid;
+  grid-template-columns: 100%;
+  gap: 0.625em;
+  margin-top: 2.5em;
+}
+.parking__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.parking__icon {
+  width: 1.25em;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  margin-right: .625em;
+}
+.parking__icon img {
+  width: 100%;
+}
+.parking__list {
+  margin-top: .625em;
+  gap: .625em;
+}
+
+@media screen and (max-width: 576px) {
+  .contacts__inner {
+    padding: 2.25em 0 13.875em;
+    grid-template-columns: 100%;
+    position: relative;
+  }
+  .contacts__info {
+    gap: .625em;
+  }
+  .contacts__info2 {
+    margin-top: 3.75em;
+    gap: .75em;
+  }
+  .contacts__info3 {
+    position: absolute;
+    gap: 1.5em;
+    bottom: 3.75em;
+    width: 100%;
+  }
+  .contacts__items {
+    gap: 1.5em;
+  }
+
+  .clinic-card {
+    padding: 1.5em;
+    grid-template-columns: calc(100% - 7.75em - .625em) 7.75em;
+    gap: .625em;
+  }
+
+  .contacts2 {
+    padding: 5em 0 1.875em;
+  }
+  .contacts2__inner {
+    grid-template-columns: 100%;
+  }
+
+  .personal-tutor {
+    padding: 1.5em;
+  }
+  .personal-tutor__grid {
+    grid-template-columns: 100%;
+    gap: .5em;
+  }
+  .personal-tutor__images {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    -webkit-box-pack: unset;
+        -ms-flex-pack: unset;
+            justify-content: unset;
+    margin-top: .75em;
+  }
+
+  .feedback2 {
+    padding: 1.875em 0;
+  }
+
+  .road {
+    padding: 3.75em 0 1.875em;
+  }
+  .road__grid {
+    margin-top: .625em;
+    grid-template-columns: 100%;
+  }
+
+  .road-card {
+    padding: .875em;
+  }
+  .road-card__title {
+    display: none;
+  }
+  .road-card__grid {
+    margin-top: 0;
+    grid-template-columns: 100%;
+    gap: 1.875em;
+  }
+
+  .clinic {
+    padding: 1em 0 3.75em;
+  }
+  .clinic__inner {
+    grid-template-columns: 100%;
+    margin-top: 1.5em;
+  }
+  .clinic__desc {
+    margin: 0 0 .875em;
+  }
+  .clinic__nav {
+    margin-top: 1.5em;
+  }
+  .clinic__btn {
+    width: 100%;
+  }
+  .clinic .tv__tabs {
+    margin: 0;
+  }
+  .clinic__map {
+    margin: 1.25em 0 0 -1.5em;
+    width: calc(100% + 3em);
+    height: 10.1875em;
+  }
+  .clinic__map-info {
+    background: rgba(255, 255, 255, 0.8);
+    -webkit-backdrop-filter: blur(7px);
+            backdrop-filter: blur(7px);
+    border-radius: .75em;
+    padding: 1.25em;
+    position: relative;
+    z-index: 3;
+    margin-top: -1.25em;
+  }
+  .clinic__map .map {
+    border-radius: 0;
+  }
+  .clinic__way {
+    margin: 0;
+    gap: .625em;
+  }
+  .clinic__way-items {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: .75em;
+  }
+  .clinic__way-btn {
+    margin: 0 !important;
+  }
+
+  .parking {
+    margin-top: 1.5em;
+  }
+  .parking__list {
+    margin-top: .2em;
+  }
+}
+
+/*# sourceMappingURL=contacts.css.map */
